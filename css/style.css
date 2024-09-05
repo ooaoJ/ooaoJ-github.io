@@ -5,14 +5,20 @@
     font-family: 'Open Sans',sans-serif;
     list-style: none;
     text-decoration: none;
-    color: #333333;
 }
-header{ 
+#main-header{ 
     background-color: #218EE1;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+button{
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: #333333;
 }
 .logo-container{
     display: flex;
@@ -23,9 +29,10 @@ header{
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
     padding-left: 8px;
     padding-right: 8px;
-    width: 100%;
+    width: 98%;
     height: 100%;   
 }
 .header-logo{
@@ -119,7 +126,7 @@ header{
 
     justify-content: center;
 }
-main{
+#root{
     width: 100%;
     min-height: 600px;
     height: auto;
@@ -193,4 +200,339 @@ img{
     gap: 8px;
     font-size: 14px;
     font-weight: 500;
+}
+.content-temp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80px;
+    max-height: 100px;
+    gap: 10px;
+    background-color: #b4b4b400;
+}
+#content-temp-1{
+    width: 160px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+#content-temp-2{
+    width: 300px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+#content-temp-2 button{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: none;
+    border: none;
+    font-size: 18px;
+    text-align: center;
+}
+#content-temp-3{
+    width: 450px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+}
+#content-temp-3 div{
+    display: flex;
+}
+.temp{
+    display: flex;
+    gap: 6px;
+}
+.temp div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#content-temp-3 p{
+    font-size: 60px;
+}
+.max-temp{
+    font-weight: 700
+}
+#sol{
+    width: 60px;
+}
+#content-temp-4 a{
+    color: #218EE1;
+}
+.dopen{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.dopen h2{
+    font-size: 48px;
+    font-weight: 200;
+}
+.dclose{
+    margin-top: 15px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+.dclose button{
+    color: #fff;
+    font-size: 12px;
+    font-weight: 200;
+    width: auto;
+    padding: 10px;
+    height: 40px;
+    border-radius: 20px;
+    border: none;
+}
+
+#brasilia-open .line{
+    background-color: #556373;
+    width: 79%;
+    height: 1px;
+}
+#brasilia-open h2{
+    color: #556373;
+}
+#brasilia-close .line{
+    width: 90%;
+    height: 1px;
+    background-color: #556373;
+}
+#brasilia-close button{
+    background-color: #556373;
+}
+
+
+#para2024-open .line{
+    background-color: #599973;
+    width: 60%;
+    height: 1px;
+}
+#para2024-open h2{
+    color: #599973;
+}
+#para2024-close .line{
+    width: 85%;
+    height: 1px;
+    background-color: #599973;
+}
+#para2024-close button{
+    background-color: #599973;
+}
+
+
+.content-brasilia > div{
+    display: flex;
+    gap: 30px;
+}
+.content-brasilia div div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content-brasilia div div div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 14px;
+}
+
+.content-para2024 > div{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+.content-para2024 div > div{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.content-para2024 div > div > div{
+    display: flex;
+    flex-direction: row;
+    gap: 8px;
+    font-size: 14px;
+}
+
+
+#drama-open .line{
+    background-color: #4766AC;
+    width: 75%;
+    height: 1px;
+}
+#drama-open h2{
+    color: #4766AC;
+}
+#drama-close .line{
+    width: 90%;
+    height: 1px;
+    background-color: #4766AC;
+}
+#drama-close button{
+    background-color: #4766AC;
+}
+
+.content-drama > div{
+    display: flex;
+}
+.content-drama img{
+    width: 255px;
+    height: 140px;
+}
+
+#videos-open .line{
+    background-color: #218EE1;
+    width: 75%;
+    height: 1px;
+}
+#videos-open h2{
+    color: #218EE1;
+}
+#videos-close .line{
+    width: 90%;
+    height: 1px;
+    background-color: #218EE1;
+}
+#videos-close button{
+    background-color: #218EE1;
+}
+.content-videos > div{
+    display: flex;
+    width: 35%;
+    gap: 35px;
+    justify-content: space-between
+}
+.content-line{
+    width: 100%;
+    background-color: rgb(233, 233, 233);
+    display: flex;
+    justify-content: center;
+}
+.content-line a{
+    width: 95%;
+    display: flex;
+    align-items: center;
+    margin: auto 10px;
+    gap: 20px;
+}
+.aovivo{
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: red;
+}
+.content-line img{
+    width: 125px;
+}
+.content-line a>div{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    color: red;
+    font-weight: 700
+}
+.content-line a>p{
+    color: #333333;
+    font-weight: 600;
+}
+.container-image{
+    position: relative;
+    width: 50%;
+}
+.more-read {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #eeeeee;
+    padding: 10px;
+    gap: 20px;
+}
+.more-read header{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.more-read h2{
+    font-size: 26px;
+    font-weight: 300;
+}
+.more-read header {
+    width: 100%;
+    height: 30%;
+
+}
+.more-read main{
+    display: flex;
+    gap: 20px;
+}
+.line-read{
+    width: 85%;
+    height: 1px;
+    background-color: #333333;
+}
+
+
+
+
+#prisma-open .line{
+    background-color: #4766AC;
+    width: 85%;
+    height: 1px;
+}
+#prisma-open h2{
+    color: #4766AC;
+}
+#prisma-close .line{
+    width: 90%;
+    height: 1px;
+    background-color: #4766AC;
+}
+#prisma-close button{
+    background-color: #4766AC
+}
+.content-prisma > div{
+    display: flex;
+    width: 100%;
+    gap: 35px;
+    justify-content: space-between
+}
+.content-prisma img{
+    width: 255px;
+    height: 143px;
+    overflow: hidden;
+}
+
+#entrete-open .line{
+    background-color: #F78714;
+    width: 85%;
+    height: 1px;
+}
+#entrete-open h2{
+    color: #F78714;
+}
+#entrete-close .line{
+    width: 85%;
+    height: 1px;
+    background-color: #F78714;
+}
+#entrete-close button{
+    background-color: #F78714;
+}
+.entrete-prisma > div{
+    display: flex;
+    width: 100%;
+    gap: 35px;
+    justify-content: space-between
 }
