@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     margin: 0;
     padding: 0;
@@ -8,10 +9,13 @@
 }
 #main-header{ 
     background-color: #218EE1;
+    width: 100%;
     height: 56px;
     display: flex;
     align-items: center;
     justify-content: center;
+    top: 0px;
+    position: fixed;
 }
 button{
     cursor: pointer;
@@ -30,8 +34,7 @@ a{
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding-left: 8px;
-    padding-right: 8px;
+    
     width: 98%;
     height: 100%;   
 }
@@ -60,7 +63,7 @@ a{
     border-right: 1px solid rgb(255, 255, 255);
 }
 .navigation{
-    width: 1350px;
+    width: 1550px;
     height: 100%;
     margin-left: 20px;
     display: flex;
@@ -119,11 +122,11 @@ a{
     height: 100%;
 }
 #container-ad{
+
     height: auto;
     width: 90%;
-    margin: 42px auto 40px;
+    margin: 120px auto 40px;
     display: flex;
-
     justify-content: center;
 }
 #root{
@@ -514,25 +517,134 @@ img{
     overflow: hidden;
 }
 
-#entrete-open .line{
-    background-color: #F78714;
+#sports-open .line{
+    background-color: #599973;
     width: 85%;
     height: 1px;
 }
-#entrete-open h2{
-    color: #F78714;
+#sports-open h2{
+    color: #599973;
 }
-#entrete-close .line{
-    width: 85%;
+#sports-close .line{
+    width: 88%;
     height: 1px;
-    background-color: #F78714;
+    background-color: #599973;
 }
-#entrete-close button{
-    background-color: #F78714;
+#sports-close button{
+    background-color: #599973;
 }
-.entrete-prisma > div{
+
+.sport-content{
     display: flex;
+    gap: 20px;
+}
+.sport-root{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.sport-root p{
+    font-size: 18px;
+    font-weight: 500;
+}
+.sport-content img{
+    width: 350px;
+    height: 200px;
+}
+
+.footer-content{
     width: 100%;
-    gap: 35px;
-    justify-content: space-between
+    height: auto;
+    margin-bottom: 50px;
+}
+.footer-content div{
+    width: 100%;
+    height: 100%;
+}
+.footer-content div > ul{
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+}
+.footer-content div > ul > li{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.lista{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer-list h5{
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.footer-li{
+    color: #666666;
+    font-size: 14px;
+    cursor: pointer;
+}
+.footer-li:hover{
+    text-decoration: underline;
+}
+footer{
+    width: 100%;
+    height: 162px;
+    background-color: #218EE1;
+    color: #fff;
+}
+footer > div{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer-container{
+    width: 70%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.header-footer{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 20px;
+    border-bottom: 1px solid white;
+    margin-bottom: 20px;
+}
+.header-footer h1{
+    font-size: 20px;
+    font-weight: 800;
+}
+.header-footer span{
+    font-size: 12px;
+    font-weight: 300;
+}
+.option-footer{
+    width: 100%;
+}
+.option-footer ul{
+    display: flex;
+    gap: 30px;
+}
+.option-footer ul li{
+    font-size: 12px;
+    font-weight: 400;
+    cursor: pointer;
+}
+.option-footer ul li:hover{
+    text-decoration: underline;
+}
+#line{
+    width: 100%;
+    height: 1px;
+    background-color: #999999;
 }
